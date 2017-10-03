@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:700');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Box-sizing */
+body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #B0C4DE;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    text-align: left;
+}
+
+header, main, footer, article, nav, div {
+    display: block;
+    overflow: hidden;
+
+}
+
+/* Structure */
+#master-grid {
+      max-width: 1200px;
+		  margin: 0 auto;
+
+		  display: grid;
+		  grid-template-columns: 1fr 1fr 1fr;
+		  grid-template-rows: auto auto auto auto;
+			grid-template-areas: 	"header header header"
+                            "nav nav nav"
+							              "forsidebilde forsidebilde viktigtext"
+										        "maincontent maincontent maincontent"
+										        "footer footer footer";
+  }
+
+header {
+		grid-area: header;
+    text-align: center;
+		background: linear-gradient(#191970, #DCDCDC, #191970);
+    margin-bottom: 0.5%;
+	}
+
+  a {
+      text-decoration: none;
+  }
+
+#topmenu {
+    grid-area: nav;
+    width: 100%;
+		background: #778899;
+    margin-bottom: 0.5%;
+    border-radius: 6px;
+	}
+
+#topmenu ul li {
+    display: inline;
+  }
+
+#topmenu a:link, #topmenu a:visited {
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    width: 22%;
+  }
+
+#topmenu a:hover {
+    color: #191970;
+}
+
+a:hover, a:active {
+    color: #191970;
+}
+
+#forsidebilde {
+  	grid-area: forsidebilde;
+  	width: 100%;
+    height: 600px;
+    border-radius: 6px;
+  }
+
+#viktig {
+		grid-area: viktigtext;
+		background: #B0C4DE;
+    margin-left: 1.5%;
+    padding: 5% 5%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #191970;
+	}
+
+main {
+    grid-area: maincontent;
+    display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+		margin: 10px auto;
+    border-radius: 6px;
+}
+
+main article {
+    width: calc(100% / 3);
+    padding: 50px;
+    background: #F0FFFF;
+    margin: 0 0px;
+    border: 0.5px solid #191970;
+}
+
+.fullarticle {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.btnLesmer {
+    border: 1px solid #191970;
+    border-radius: 4px;
+    font-size: 12px;
+    color: black;
+    padding: 2px;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    background: #666;
+    color: white;
+    border-radius: 6px;
+    padding-left: 1.5%;
+}
+
+footer p a {
+  display: inline-block;
+  text-align: right;
+  color: white;
+}
+
+footer p i {
+  display: inline-block;
+  text-align: right;
+  padding-right: 5px;
+  width: 50%;
+}
+
+#nameFooter {
+    color: #87CEFA;
+}

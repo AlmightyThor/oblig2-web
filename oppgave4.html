@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <title>Webutvikling</title>
+
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/stilark2.css">
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+<body>
+  <div id="master-grid">
+    <header>
+      <h1>Webutvikling</h1>
+    </header>
+
+    <nav id="topmenu">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="oppgave4.html">MathML / SVG</a></li>
+        <li><a href="oppgave6.html">Git / GitHub</a></li>
+        <li><a href="linkearkiv.html">Linkearkiv</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article class="fullarticle">
+        <h3>MathML</h3>
+        <em>Mathematical Markup Language</em><br/>
+        <p>MathML er en strukturert måte å representere matematiske former på. Det er nyttig i kombinasjon med HTML ved at man kan lage matematiske uttrykk med kode istedet for å f.eks. bruke et bilde. <br />
+           To typer MathML:</p>
+        <ul>
+          <li>C-MathML - beholder semantikken i det matematiske uttrykket.</li>
+          <li>P-MathML - beskrier hvordan det skal vises.</li>
+        </ul>
+
+        <math>
+        	<mi>a</mi>
+        	<msup>
+        		<mi>x</mi>
+        		<mn>2</mn>
+        	</msup>
+        	<mo>+</mo>
+        	<mi>b</mi>
+        	<mi>x</mi>
+        	<mo>+</mo>
+        	<mi>c</mi>
+        </math> <br />
+
+        <p>Ved bruk av MathML kan man lage fine matematiske uttrykk som kan inneholde de
+           fleste matematiske tegn uten å måtte intregere dem inn i HTML på andre måter.</p>
+
+        <math>
+          <mroot>
+            <mfrac>
+              <mn>32</mn>
+              <mn>2</mn>
+            </mfrac>
+            <mn>4</mn>
+          </mroot>
+        </math> <br />
+
+        <p>Selv om det ser ut som vanlig tekst, er fonten forandret og man kan skrive matematikk som kan regnes ut maskinelt.
+           Fordelen er at søkemotorer kan plukke opp mattestykkene istedet for et bilde.
+           Ulempen er at det er få nettlesere som støtter MathML</p>
+
+        <math>
+          <mi>r</mi>
+            <mo>&#xA0;</mo>
+            <mo>=</mo>
+            <mo>&#x2009;</mo>
+          <msqrt>
+            <mfrac>
+              <mi>A</mi>
+              <mi mathvariant="normal">&#x3C0;</mi>
+            </mfrac>
+          </msqrt>
+        </math> <br /><br />
+
+        <a class="btnLesmer" href="https://www.w3.org/Math/whatIsMathML.html">Les mer..</a>
+      </article>
+
+      <article class="fullarticle">
+        <h3>SVG</h3>
+        <em>Scalable Vector Graphics</em> <br />
+        <p>SVG er et filformat som beskriver todimensjonal vektorgrafikk. Vektorgrafikken brukes til å lage bilder og figurer med kun hjelp av en teksteditor.<br />
+           Eksempler:</p>
+
+           <svg width="400" height="110">
+             <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+             <circle height="100" width="100" cx="200" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+             <circle height="100" width="100" cx="75" cy="50" r="40" stroke="black" stroke-width="3" fill="green" />
+             <circle height="100" width="100" cx="325" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+           </svg> <br />
+
+           <svg height="210" width="500">
+             <polygon points="130,10 230,160 160,210" style="fill:yellow;stroke:black;stroke-width:2" />
+           </svg> <br />
+
+        <a class="btnLesmer" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Les mer..</a>
+      </article>
+    </main>
+
+    <footer>
+      <p>Laget av <span id="nameFooter">Thor Håkon Westlie</span> 2017
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+      <a href="omdenne.html" target="_blank">Om denne siden</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
